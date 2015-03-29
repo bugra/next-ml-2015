@@ -1,2 +1,2 @@
-# nicar15
-Another edition of "Visual journalism for tiny news desks"
+### Next ML 2015 Slides 
+- Topic Modeling for Amnesty International Data
