@@ -45,8 +45,11 @@
 				<section>
 					<h2 style="line-height:1.5;"><strong>Topic Modeling </strong> <br /> for Amnesty International Data</h2>
 					<p>@DataKind</p>
+                    
 				</section>
-                
+                <section>
+                    <img src="assets/frequentists_vs_bayesians.png" height="700" width="450"/>
+                </section>
 				<section>
 					<h2><strong>Hi!</strong></h2>
                     <p><strong>Bugra Akyildiz</strong> </p>
@@ -83,6 +86,9 @@
 				</section>
                         
                 <section>
+                        <h2>Data</h2>
+                </section>
+                <section>
 					<h3><b>Amnesty International Data</b></h3>
                         <br>
                         <h4><b>Complaints</b></h4>
@@ -100,20 +106,31 @@
                             <li>...</li>
                         </ul>
 				</section>
+                   
+                <section>
+                        <h2> Example News</h2>
+                        <img src="assets/example-snippet-1.png" />
+                </section>
                         
+                <section>
+                        <h2> Another One</h2>
+                        <img src="assets/example-snippet-2.png" />
+                </section>
+                
 				<section>
-					<h2>Spread the word</h2>
-				</section>
+                    <h2>Machine Learning Model</h2>
+                </section>
                         
 				<section>
 					<h3>Topic Modeling</h3><br>
                     <p>The <b>unsupervised learning method</b> you apply to <b>a bunch of text</b> when you have <b>no idea</b> what to do with them</p>
 				</section>
 				<section>
-					<h3>Topic model is a <b>graphical model</b> for discovering the <b>topics or themes</b>
-                        that occur in a <b>collection of documents.</b></h3>
+					<h3>Topic model is umbrella name for a suite of <b>graphical models</b> for discovering <b>topics or themes</b>
+                     in a <b>collection of documents.</b></h3>
 				</section>
                 <section>
+                    <h2> Why Topic Model?</h2>
                     <ul>
                         <li>Useful to explore the documents</li>
                         <li>Easy to apply to unstructured documents</li>
@@ -136,9 +153,37 @@
 - $\theta_i$: Topic distribution of the document $i$
 - $\phi_k$: Word distribution for topic $k$
 - $w_{ij}$: $j$th word of of $i$th document
-- $z_{ij}$: topic assignment of $w_{ij}$
+- $z_{ij}$: topic assignment of the word above
 </section>
-				<section>
+                        
+<section data-markdown>
+### Observed
+- $w_{ij}$
+    
+</section>                        
+                        
+<section data-markdown>
+### How?
+- Generate $\theta_i \sim Dir(\alpha)$
+- Generate $\theta_k \sim Dir(\beta)$
+- For each document $i$ and word $j$:
+    - Choose a topic $z_{ij} \sim Multinomial(\theta_i)$ 
+    - Choose a word $w_{ij}$ from 
+    - $Multinomial( {\phi_z}_ij )$
+</section>                        
+				
+<section data-markdown>
+### Dirichlet Distribution
+    
+    
+</section>
+                        
+<section data-markdown>
+### Multinomial Distribution
+
+</section>               
+                        
+                <section>
 					<h2>Topics</h2>
                     <h4>https://datadive.herokuapp.com/</h4>
 				</section>
@@ -147,6 +192,11 @@
                     <h2>Topics Represented as Graph</h2>
 					<h4>https://datadive.herokuapp.com/graph_clusters</h4>
 				</section>
+                        
+                <section>
+                    <h3> Every color represents a topic</h3>
+                    <img src="assets/graph-clusters.png"/>
+                </section>
                         
                 <section>
                     <h2> Fear of Safety</h2>
@@ -182,6 +232,8 @@
 					<img src="assets/pink-2.png" />
 				</section>
                         
+                
+                        
                 <section>
                     <h2>If all you have is a hammer, everything looks like a nail</h2>
                 </section>
@@ -201,6 +253,7 @@
                     <h3>Turbo Topics</h3>
                     <h4>...</h4>
                 </section>
+                        
 				<section>
 					<h2><strong>Tools</strong></h2>
                     <ul>
@@ -215,6 +268,12 @@
 				<section>
 					<h2><strong>Questions?</strong></h2>
 				</section>
+                        
+<section data-markdown>
+## References
+- [Introduction to Dirichlet Distribution and Related Processes](https://www.ee.washington.edu/techsite/papers/documents/UWEETR-2010-0006.pdf)
+- 
+</section>
 
 			</div>
 
